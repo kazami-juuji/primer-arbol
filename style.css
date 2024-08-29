@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    text-align: center;
+}
+
+input, select, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tree {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.operator, .value {
+    width: 58px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+.branches {
+    display: flex;
+    justify-content: space-between;
+    width: 150px; /* Ajusta según la distancia que quieras entre los círculos */
+    position: relative;
+    height: 30px; /* Altura entre el operador y los valores */
+}
+
+.line {
+    width: 3px;
+    height: 50px; /* Ajusta la altura para que coincida con la distancia vertical entre los círculos */
+    background-color: black;
+    position: absolute;
+    transform: rotate(45deg); /* Rotación para la diagonal */
+    transform-origin: top; /* Punto de origen para la rotación */
+}
+
+.line.left {
+    left: 35%;
+    top: -10px;
+    transform: rotate(32deg); /* Rotación para la diagonal izquierda */
+}
+
+.line.right {
+    right: 35%;
+    top: -10px;
+    transform: rotate(-32deg); /* Rotación para la diagonal derecha */
+}
+h1 {
+    padding-top: 20px;
+}
